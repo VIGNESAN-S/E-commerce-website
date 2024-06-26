@@ -1,0 +1,36 @@
+.change-farm{
+    height: 500px;
+}
+.change-img{
+    height: 100%;
+    background-size: cover;
+}
+.showdo{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.color-boy{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.line-boy{
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.like{
+    text-decoration: none;
+}
+.size-img{
+    height: 50%;
+}
+.btnOutline{
+    border: none !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #8EC5FC !important;
+    border-radius: 50px;  
+}
+*{
+    font-family: SourceSansPro;
+}

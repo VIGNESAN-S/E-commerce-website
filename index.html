@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <title>Fashion World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav bar  -->
+  <nav class="navbar navbar-expand-lg showdo color-boy rounded-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1 class="display-4">Fashion World</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-5 d-flex align-items-center"
+          style="--bs-scroll-height: 100px;">
+          <li class="nav-item ms-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">contact</a>
+
+          </li>
+          <a class="btn btn-outline-dark col-3 ms-2 my-2 align-self-center"
+            href="http://127.0.0.1:5500/login_page/login.html?#" style="border-radius: 50px" ; role="button">Login</a>
+        </ul>
+
+
+
+
+
+        <form class="d-flex mx-5" role="search">
+          <!-- buy icon -->
+
+          <a class="btn btn-dark me-2 btn-sm rounded-4" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg></a>
+
+          <!-- heart icon -->
+          <button type="button" class="btn btn-danger position-relative rounded-4 btn-sm me-4"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+            </svg>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+          <input class="form-control me-2" style="border-radius: 50px;" type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-outline-light-md text-dark badge rounded-pill" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav $ tab -->
+  <div class="container-fluid my-2">
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Girls</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Women</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Kids</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Carousel -->
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active change-farm">
+              <img src="https://i.ytimg.com/vi/txt2PxQDWgk/maxresdefault.jpg" class="d-block w-100 change-img"
+                alt="brand">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item change-farm">
+              <img src="https://cdn.shopify.com/s/files/1/0577/5605/7644/files/Sarees_App.jpg?v=1709179069"
+                class="d-block w-100 change-img" alt="brand">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item change-farm">
+              <img
+                src="https://images.pexels.com/photos/13408260/pexels-photo-13408260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-100 change-img" alt="brand">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card -->
+
+  <div class="container py-5">
+    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230714/6OjV/64b18548eebac147fc6ee1e9/-473Wx593H-469489517-offwhite-MODEL.jpg"
+            class="card-img-top" alt="dress">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20231026/QNG0/653a5196afa4cf41f56181e6/-473Wx593H-469560980-black-MODEL.jpg"
+            class="card-img-top" alt="dress">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230720/mvqX/64b94c88eebac147fc7eb9b7/-473Wx593H-469486613-brown-MODEL.jpg"
+            class="card-img-top" alt="top">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20240207/at8X/65c386b916fd2c6e6ae5fd05/-473Wx593H-467051264-blue-MODEL5.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230628/PigY/649c2c91eebac147fc2c12a7/-473Wx593H-466317829-white-MODEL.jpg"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230919/82br/6508cd66ddf7791519e46125/-473Wx593H-466588910-pink-MODEL.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230717/uDG0/64b544e8eebac147fc724a53/max-pink-regular-round-neck-woven-top.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230624/np50/6496a0c0eebac147fcf96841/-473Wx593H-465507028-yellow-MODEL3.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230525/WrNR/646f861b42f9e729d7d0e7d6/max-green-regular-embroidered-round-neck-top.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fashion World clothes</h5>
+            <p class="card-text">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230624/ud9t/64963e83a9b42d15c9d7af02/-473Wx593H-465223412-black-MODEL.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20231221/eFaD/6583421addf7791519ddcfbe/dracht-black-regular-boat-neck-top-with-sleeveless.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20240622/KOhY/66760fe76f60443f317768c1/-473Wx593H-463624230-blue-MODEL.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230323/wE3b/641c6965711cf97ba7eb6357/-473Wx593H-441148893-darkgreen-MODEL.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230531/fLqd/6477653542f9e729d701da7f/-473Wx593H-443009276-pink-MODEL.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230624/M2MM/64964518a9b42d15c9d8921b/cation-red-regular-slim-fit-square-neck-crop-top.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20231116/TaQc/65561ac0afa4cf41f58da6cd/draax-fashions-black-regular-women-slim-fit-square-neck-crop-top.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: SourceSansPro;">Fashion World clothes</h5>
+            <p class="card-text" style="font-family: SourceSansPro;">Nice Fabric Material</p>
+            <div class="d-flex justify-content-center">
+              <span class="badge text-bg-success mb-2">4.5<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                  fill="currentColor" class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg></span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span style="font-family: SourceSansPro; font-size: 15px;">MRP₹999
+                <span
+                  style="text-decoration: line-through; font-family: SourceSansPro; font-size: 15px;">1499</span>(%40)</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-success rounded-pill stretched-link">Buy now</a>
+              <button type="button" class="btn btn-outline-danger  btn-sm rounded-pill btnOutline"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- last container -->
+
+  <div class="container-fluid p-5 color-boy rounded-top">
+    <div class="row row-cols-lg-4 row-cols-sm-3">
+      <div class="col">
+        <p>ONLINE SHOPPING</p>
+        <a href="#" class="like link-dark">Women</a><br>
+        <a href="#" class="like link-dark">Girls</a><br>
+        <a href="#" class="like link-dark">Kids</a><br>
+      </div>
+      <div class="col">
+        <p>CONSUMER POLICIES</p>
+        <a href="#" class="like link-dark">contact</a><br>
+        <a href="#" class="like link-dark">FAQ</a><br>
+        <a href="#" class="like link-dark">T&C</a><br>
+        <a href="#" class="like link-dark">Terms Of Use</a><br>
+        <a href="#" class="like link-dark">Tarck Odder</a><br>
+        <a href="#" class="like link-dark">Shopping</a><br>
+        <a href="#" class="like link-dark">Cancellation</a><br>
+        <a href="#" class="like link-dark">Returns</a><br>
+        <a href="#" class="like link-dark">Privacy Policy</a><br>
+        <a href="#" class="like link-dark">Grievance Officer</a><br>
+      </div>
+
+      <div class="col">
+        <p>USEFUL LINK</p>
+        <a href="#" class="like link-dark">Blog</a><br>
+        <a href="#" class="like link-dark">Careers</a><br>
+        <a href="#" class="like link-dark">Site Map</a><br>
+        <a href="#" class="like link-dark">Cleartrip</a><br>
+      </div>
+      <div class="col">
+        <p>DOWNLOADING APP</p>
+        <a class="btn btn-outline-dark" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+            <path
+              d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27" />
+          </svg>Play Store </a>
+        <a class="btn btn-outline-dark my-2" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+          </svg>App Store</a>
+
+
+        <P class="mt-2">KEEP IN TOUCH</P>
+        <a class="btn btn-outline-dark btnOutline rounded-circle me-2 btn-sm pb-2" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+        <a class="btn btn-outline-dark btnOutline rounded-circle me-2 btn-sm pb-2" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a>
+        <a class="btn btn-outline-dark btnOutline rounded-circle me-2 btn-sm pb-2" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg></a>
+        <a class="btn btn-outline-dark btnOutline rounded-circle me-2 btn-sm pb-2" href="#" role="button"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+            viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+          </svg></a>
+
+
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <small class="d-flex justify-content-center">CoypRight &copy; <a href="http://127.0.0.1:5500/index/index.html?#"
+          style="text-decoration: none;">- Fashion World</a></small>
+    </footer>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
